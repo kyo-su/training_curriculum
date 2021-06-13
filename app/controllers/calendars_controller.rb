@@ -36,8 +36,7 @@ class CalendarsController < ApplicationController
       end
 
       # wdayメソッドを用いて取得した数値
-      wday_num = Date.today.wday
-      wday_num = wday_num + x
+      wday_num = Date.today.wday + x
 
       #「wday_numが7以上の場合」という条件式
       if wday_num >= 7
